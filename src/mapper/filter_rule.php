@@ -100,7 +100,7 @@ class ezcLogFilterRule
      */
     public function __construct( ezcLogFilter $filter, $container, $continueProcessing )
     {
-        $this->filter = clone( $filter );
+        $this->filter = clone $filter;
 
         if ( $this->filter->severity  == 0 )
         {
